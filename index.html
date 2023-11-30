@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whisking Wonders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <h1>WhiskingWonders.com</h1>
+    <div class="header">
+      <div class="text">
+        <p>
+          Where whisking meets simplicity,<br />
+          bringing you delightful recipes to <br />
+          transform your food into a delicious experience.
+        </p>
+      </div>
+      <p>
+        Feeling confused about what to eat? <br />
+        We've got you covered.
+      </p>
+    </div>
+    <div class="input-text">
+      <input type="text" placeholder="Search for categories" id="input-box" />
+      <button class="btn" onclick="loadingCategoryMeals()">Search</button>
+    </div>
+    <!-- Random meal section -->
+    <div class="random-image">
+      <div class="meal">
+        <p class="meal-text">Here's the Meal of the Day!</p>
+      </div>
+      <div>
+        <div id="random-meal"></div>
+        <div id="food-name"></div>
+      </div>
+    </div>
+    <!-- Searched category section -->
+    <div>
+      <h2 id="categories-title">List of Searched Category:</h2>
+      <div id="categories-box">
+        <div id="categories-image"></div>
+        <div id="categories-name"></div>
+      </div>
+    </div>
+    <!-- Modal for random meal section -->
+    <div id="randomModal" class="modal">
+      <div class="modal-content">
+        <span class="closeModal" onclick="closingModal()">&times;</span>
+        <h2 class="list-items">Ingredients</h2>
+        <ul id="ingredients-list"></ul>
+      </div>
+    </div>
+    <div><h1>Made with 💙 by Manya</h1></div>
+    <script src="script.js"></script>
+  </body>
+</html>
